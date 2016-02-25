@@ -1,0 +1,111 @@
+/* Front Page */
+
+.nav li {
+  display: inline;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none !important;
+  font-size: 15px;
+}
+
+.nav .pull-right {
+  padding-top: 20px;
+  padding-right: 10px;
+}
+
+.nav .pull-right a {
+  padding-left: 25px;
+}
+
+.nav .pull-left {
+  padding-top: 30px;
+  padding-left: 25px;
+}
+
+.nav .pull-left li {
+  background-color: #1B3266;
+  padding: 8px 30px;
+}
+
+/* More on hovering: http://www.w3schools.com/cssref/sel_hover.asp 
+Look up "a:click" to get rid of clicking effect*/
+a:hover, a:active, a:visited {
+  color: white;
+}
+
+.front-page {
+  font-family: 'Titillium Web', sans-serif;
+  background-image: url('images/front_image.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+.front-page h1 {
+  font-size: 70px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.front-page p {
+  font-size: 20px;
+  font-weight: 200;
+  color: #FFFFFF;
+  padding-top: 100px;
+}
+
+/* Slide Show */
+
+.slide-show {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.slide-show h1 {
+  font-weight: 200;
+  font-size: 75px;
+  color: #555555;
+}
+
+.slide-show p {
+  font-weight: 200;
+  font-size: 20px;
+  color: #555555;
+}
+
+.info-field {
+  background-color: #FFFFFF;
+  height: 100vh;
+}
+
+.info-field-grey {
+  background-color: #E6E6E6;
+  height: 100vh;
+}
+
+.info-field-grey h1 {
+  text-shadow: 1px 1px 0px #FFFFFF;
+}
+
+.info-field-grey p {
+  text-shadow: 1px 1px 0px #FFFFFF;
+}
+
+.site-footer {
+  background-color: #333333;
+  height: 300px;
+}
+
+/* Centering elements on page with responsitivity:
+http://stackoverflow.com/questions/20142606/in-a-bootstrap-responsive-page-how-to-center-a-div; */
+html, body, .container-table {
+    height: 100%;
+}
+.container-table {
+    display: table;
+}
+.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
+}
