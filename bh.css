@@ -1,3 +1,15 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.continer {
+  margin: 0px;
+}
+
 /* Front Page */
 
 .nav li {
@@ -5,8 +17,8 @@
 }
 
 .nav a {
+  font-family: 'Titillium Web', sans-serif;
   color: white;
-  text-decoration: none !important;
   font-size: 15px;
 }
 
@@ -24,19 +36,19 @@
   padding-left: 25px;
 }
 
-.nav .pull-left li {
+.nav .pull-left .button {
   background-color: #1B3266;
   padding: 8px 30px;
 }
 
-/* More on hovering: http://www.w3schools.com/cssref/sel_hover.asp 
-Look up "a:click" to get rid of clicking effect*/
-a:hover, a:active, a:visited {
+.front-page a:hover, a:active, a:visited {
   color: white;
 }
 
+/* More on hovering: http://www.w3schools.com/cssref/sel_hover.asp 
+Look up "a:click" to get rid of clicking effect*/
+
 .front-page {
-  font-family: 'Titillium Web', sans-serif;
   background-image: url('images/front_image.jpg');
   background-size: cover;
   background-position: center center;
@@ -44,15 +56,16 @@ a:hover, a:active, a:visited {
 }
 
 .front-page h1 {
-  font-size: 70px;
+  font-weight: 200;
+  font-size: 60px;
   font-weight: 500;
-  color: #FFFFFF;
+  color: white;
 }
 
 .front-page p {
   font-size: 20px;
   font-weight: 200;
-  color: #FFFFFF;
+  color: white;
   padding-top: 100px;
 }
 
@@ -75,26 +88,21 @@ a:hover, a:active, a:visited {
 }
 
 .info-field {
-  background-color: #FFFFFF;
+  background-color: white;
   height: 100vh;
 }
 
 .info-field-grey {
-  background-color: #E6E6E6;
+  background-color: #EAEDEF;
   height: 100vh;
 }
 
 .info-field-grey h1 {
-  text-shadow: 1px 1px 0px #FFFFFF;
+  text-shadow: 1px 1px 0px white;
 }
 
 .info-field-grey p {
-  text-shadow: 1px 1px 0px #FFFFFF;
-}
-
-.site-footer {
-  background-color: #333333;
-  height: 300px;
+  text-shadow: 1px 1px 0px white;
 }
 
 /* Centering elements on page with responsitivity:
@@ -108,4 +116,129 @@ html, body, .container-table {
 .vertical-center-row {
     display: table-cell;
     vertical-align: middle;
+}
+
+/* Service Offerings */
+
+.service-offerings {
+  height: 1000px;
+}
+
+.service-offerings h1 {
+  font-weight: 200;
+  font-size: 65px;
+  color: #555555;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.service-offerings p {
+  font-weight: 200;
+  font-size: 20px;
+  color: #555555;
+  margin-bottom: 30px;
+}
+
+.service-offerings .product {
+  border: 1px solid #E6E6E6;
+}
+
+.service-offerings .description {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+}
+
+.service-offerings .description h3 {
+  color: #555555;
+}
+
+.service-offerings .description p {
+  font-size: 14px;
+  line-height: 180%;
+}
+
+.service-offerings .button {
+  background-color: #1B3266;
+  text-align: center;
+  color: white;
+  padding: 15px;
+  margin-top: 4px;
+    transition-property: all;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.service-offerings .button:hover {
+  background-color: #334874;
+  color: white;
+}
+
+.service-offerings .submit-request {
+  margin-top: 60px;
+}
+
+/* Site Footer */
+
+.site-footer {
+  background-image: url('images/footer.png');
+  background-size: cover;
+  background-position: center center;
+  height: 355px;
+}
+
+.site-footer .col-md-8 {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.site-footer .container {
+padding-top: 50px;
+padding-left: 50px;
+padding-right: 50px;
+}
+
+.site-footer .col-md-4 ul {
+  padding-left: 0px;
+}
+
+.site-footer hr {
+  margin-top: 35px;
+  margin-bottom: 23px;
+  border-top: 1px solid #808080;
+}
+
+
+.site-footer .col-md-8 a:hover {
+  color: #A8AAAA;
+}
+
+.site-footer .col-md-8 a {
+  color: white;
+  font-size: 15px;
+}
+
+.site-footer p {
+  color: white;
+  font-size: 15px;
+}
+
+.site-footer .text-right li {
+  padding-bottom: 10px;  
+}
+
+.social-tags img {
+  height: 40px;
+  width: 40px;
+}
+
+.social-tags img:hover {
+  color: #A8AAAA
+}
+
+#copy-right p {
+  font-size: 14px;
+  color: #808080;
+  padding-top: 5px;
 }
