@@ -2,8 +2,18 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+h1 {
+  font-weight: 200;
+  font-size: 75px;
+  color: #555555;
+}
+
 a {
   text-decoration: none !important;
+}
+
+ul {
+  list-style: none !important;
 }
 
 .continer {
@@ -49,7 +59,7 @@ a {
 Look up "a:click" to get rid of clicking effect*/
 
 .front-page {
-  background-image: url('images/front_image.jpg');
+  background-image: url('images/front_page/front_image.jpg');
   background-size: cover;
   background-position: center center;
   height: 100vh;
@@ -73,12 +83,6 @@ Look up "a:click" to get rid of clicking effect*/
 
 .slide-show {
   font-family: 'Open Sans', sans-serif;
-}
-
-.slide-show h1 {
-  font-weight: 200;
-  font-size: 75px;
-  color: #555555;
 }
 
 .slide-show p {
@@ -180,10 +184,20 @@ html, body, .container-table {
   margin-top: 60px;
 }
 
+/* Previous Stories */
+.previous-stories {
+  height: 100vh;
+  background-color: #EAEDEF;
+}
+
+.previous-stories h1 {
+  text-shadow: 1px 1px 0px white;
+}
+
 /* Site Footer */
 
 .site-footer {
-  background-image: url('images/footer.png');
+  background-image: url('images/footer/background.png');
   background-size: cover;
   background-position: center center;
   height: 355px;
