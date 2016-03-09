@@ -146,29 +146,29 @@ fieldset[disabled] .btn-xl.active {
 /* Navigation */
 
 .navbar-default {
-    background-color: #222;
+    background-color: rgba(35, 35, 35, 0.97);
     border-color: transparent
 }
 
 /* Blue Hands logo */
 .navbar-default .navbar-brand {
-    color: #1fb4ff;
+    color: #fff;
     font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #4dc0fc
+    color: #1fb4ff
 }
 .navbar-default .navbar-collapse {
-    border-color: rgba(255, 255, 255, .02)
+    border-color: rgba(255, 255, 255, .2)
 }
 
 /* Navbar icon */
 .navbar-default .navbar-toggle {
-    background-color: #222;
-    border-color: #222
+    background-color: rgba(35, 35, 35, 0);
+    border-color: rgba(35, 35, 35, 0)
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff
@@ -176,7 +176,8 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #222
+    background-color: rgba(35, 35, 35, 0);
+    border-color: rgba(35, 35, 35, 0)
 }
 
 /* Navbar meny options */
@@ -223,7 +224,7 @@ fieldset[disabled] .btn-xl.active {
         border-radius: 3px
     }
     .navbar-default.navbar-shrink {
-        background-color: #222;
+        background-color: rgba(35, 35, 35, 0.97);
         padding: 10px 0
     }
     .navbar-default.navbar-shrink .navbar-brand {
@@ -325,12 +326,13 @@ section h3.section-subheading {
 }
 
 #presentation p.small-text {
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 200;
     }
 
 section#presentation {
         padding-top: 0px;
+        padding-bottom: 0px
     }
 
 #presentation .info-field {
@@ -359,7 +361,7 @@ section#presentation {
     }
 
     #presentation p.small-text {
-        font-size: 20px;
+        font-size: 24px;
         font-weight: 200;
     }
 
@@ -374,7 +376,7 @@ section#presentation {
 }
 
 
-#presentation .clouds {
+#presentation .water {
     background-image: url(https://images.unsplash.com/photo-1439508472515-4899b144f04d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=27b9242e714225479603c1e469e419e9);
     background-repeat: none;
     background-attachment: scroll;
@@ -384,7 +386,7 @@ section#presentation {
     background-size: cover;
     -o-background-size: cover;
     text-align: center;
-    color: #fff;
+    color: #f2f2f2;
     height: 100vh;
 }
 
@@ -469,13 +471,16 @@ section#presentation {
 /* Contact Section */
 
 section#contact {
-    background-color: #222;
+    background-color: #4d4d4d;
     background-image: url(../img/map-image.png);
     background-position: center;
     background-repeat: no-repeat
 }
 section#contact .section-heading {
-    color: #fff
+    color: #f2f2f2
+}
+section#contact .section-subheading {
+    color: #f2f2f2
 }
 section#contact .form-group {
     margin-bottom: 25px
@@ -491,7 +496,7 @@ section#contact .form-group textarea.form-control {
     height: 236px
 }
 section#contact .form-control:focus {
-    border-color: #1fb4ff;
+    border-color: #494949;
     box-shadow: none
 }
 section#contact::-webkit-input-placeholder {
@@ -547,7 +552,7 @@ ul.social-buttons {
 }
 ul.social-buttons li a {
     display: block;
-    background-color: #222;
+    background-color: rgba(35, 35, 35, .95);
     height: 40px;
     width: 40px;
     border-radius: 100%;
