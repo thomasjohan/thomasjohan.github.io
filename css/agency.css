@@ -41,6 +41,13 @@ h6 {
     text-transform: uppercase;
     font-weight: 700
 }
+hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #ccc; /* old IE */
+    background-color: #ccc; /* Modern Browsers */
+}
 .img-centered {
     margin: 0 auto
 }
@@ -396,6 +403,40 @@ section#presentation {
     margin: 15px 0;
     text-transform: none
 }
+
+.services-subheading {
+    text-transform: none;
+}
+
+#services p {
+    color: #777;
+    margin-bottom: 0px;
+    line-height: 27px;
+    font-weight: 300;
+}
+
+#services ul p {
+    text-align: left;
+}
+
+#services p.left {
+    text-align: left;
+    padding-left: 20px;
+}
+
+#services hr {
+    margin: 15px 30px;
+}
+
+#services p.price {
+    margin-bottom: 75px;
+}
+
+#services p.price-last {
+    margin-bottom: 5px
+}
+
+
 
 /* Portfolio Grid Section */
 
