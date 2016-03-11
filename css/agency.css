@@ -347,6 +347,25 @@ section#presentation {
     padding-bottom: 50px;
 }
 
+#presentation .form-inline {
+    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-size: 16px;
+    font-weight: 200;
+}
+
+#presentation label {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px
+}
+
+#presentation input {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
 @media (min-width: 768px) {
     #presentation h1 {
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -430,10 +449,12 @@ section#presentation {
 
 #services p.price {
     margin-bottom: 75px;
+    font-size: 16px;
 }
 
 #services p.price-last {
-    margin-bottom: 5px
+    margin-bottom: 5px;
+    font-size: 16px;
 }
 
 
