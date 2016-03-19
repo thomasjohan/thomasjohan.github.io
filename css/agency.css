@@ -282,7 +282,7 @@ header .intro-text .intro-heading {
 }
 
 
-/* General Section Styling */
+/* General section & font styling */
 
 section {
     padding: 100px 0
@@ -293,11 +293,10 @@ section h2.section-heading {
     margin-bottom: 15px
 }
 section h3.section-subheading {
-    font-size: 16px;
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 200;
     text-transform: none;
-    font-style: italic;
-    font-weight: 400;
     margin-bottom: 75px
 }
 @media (min-width: 768px) {
@@ -348,7 +347,7 @@ section#presentation {
 }
 
 #presentation .form-inline {
-    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-weight: 200;
 }
@@ -462,9 +461,30 @@ section#presentation {
 /* Portfolio Grid Section */
 
 #portfolio .portfolio-item {
-    margin: 0 0 15px;
+    margin-bottom: 15px;
     right: 0
 }
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+    margin: 0
+}
+#portfolio .portfolio-item .portfolio-caption {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    text-align: center;
+    padding: 25px
+}
+#portfolio .portfolio-item .portfolio-caption p {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    margin: 0
+}
+#portfolio * {
+    z-index: 2
+}
+
 #portfolio .portfolio-item .portfolio-link {
     display: block;
     position: relative;
@@ -494,7 +514,21 @@ section#presentation {
     margin-top: -12px;
     color: #fff
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+#portfolio h2.portfolio-subheading1 {
+    text-transform: none;
+    font-size: 25px;
+    margin-top: 50px;
+}
+#portfolio h2.portfolio-subheading2 {
+    text-transform: none;
+    font-size: 25px;
+    margin-top: 90px;
+}
+#portfolio h3.section-subheading {
+    margin-bottom: 30px;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4.read-more {
     margin-top: -12px
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
@@ -518,12 +552,10 @@ section#presentation {
     font-size: 16px;
     margin: 0
 }
-#portfolio * {
-    z-index: 2
-}
-@media (min-width: 767px) {
+
+@media (min-width: 768px) {
     #portfolio .portfolio-item {
-        margin: 0 0 30px
+        margin-bottom: 30px
     }
 }
 
