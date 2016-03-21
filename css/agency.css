@@ -2,11 +2,11 @@ body {
     overflow-x: hidden;
     font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif
 }
-.text-muted {
-    color: #777
-}
 .text-primary {
     color: #1fb4ff
+}
+.text-white {
+    color: #fff;
 }
 p {
     font-size: 14px;
@@ -287,17 +287,27 @@ header .intro-text .intro-heading {
 section {
     padding: 100px 0
 }
-section h2.section-heading {
-    font-size: 40px;
+section p {
+    font-weight: 200;
+}
+section p.heading-caption {
+    text-transform: none;
+    font-size: 18px;
     margin-top: 0;
     margin-bottom: 15px
 }
 section h3.section-subheading {
-    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 18px;
-    font-weight: 200;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 25px;
     text-transform: none;
-    margin-bottom: 75px
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+section h4.content-heading {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: none;
+    font-size: 18px;
 }
 @media (min-width: 768px) {
     section {
@@ -331,9 +341,8 @@ section h3.section-subheading {
     line-height: 30px;
 }
 
-#presentation p.small-text {
-        font-size: 16px;
-        font-weight: 200;
+section#presentation p {
+        font-size: 24px;
     }
 
 section#presentation {
@@ -385,11 +394,6 @@ section#presentation {
         line-height: 60px;
     }
 
-    #presentation p.small-text {
-        font-size: 24px;
-        font-weight: 200;
-    }
-
     section#presentation {
         padding-top: 0px;
     }
@@ -402,87 +406,79 @@ section#presentation {
 
 
 #presentation .water {
-    background-image: url(https://images.unsplash.com/photo-1439508472515-4899b144f04d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=27b9242e714225479603c1e469e419e9);
-    background-repeat: none;
-    background-attachment: scroll;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    text-align: center;
+    background-color: #1fb4ff;
     color: #f2f2f2;
     height: 100vh;
 }
 
 /* Services Section */
 
-#services .service-heading {
+
+#services .services-heading {
     margin: 15px 0;
     text-transform: none
 }
 #services .services-subheading {
     text-transform: none;
 }
-#services .services-item {
-    margin-bottom: 15px;
+#services .services-content p {
+    margin: 0;
 }
-#services .services-item .services-link {
-    position: relative;
-}
-#services .services-item .services-link .services-caption {
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    top: 0px;
-    padding: 60px 25px;
-}
-#services .services-item .services-link .services-caption:hover {
-    display: none;
-}    
-#services .services-item .services-link h3 {
-    color: #fff;
-    font-size: 25px;
+#services .services-content h3 {
     text-transform: none;
 }
-#services .services-item .services-link p {
-    color: #fff;
-    font-size: 16px;
-    text-transform: none;
-    font-weight: 200;
+#services .services-content ul {
+    padding: 0;
+    margin: 0;
 }
-#services .services-item .services-link {
+#services .services-content .hover-caption h5 {
+    text-transform: none;
+    font-size: 16px;    
+}
+#services .services-content {
     display: block;
     position: relative;
     max-width: 458px;
-    margin: 0 auto
+    margin-bottom: 15px;
+    color: #fff;
+    text-align: center;
 }
-#services .services-item .services-link .services-hover {
-    background: rgba(31, 180, 255, .9);
+
+#services .services-content .image-caption {
     position: absolute;
-    width: 100%;
+    top: 0px;
     height: 100%;
-    opacity: 0;
+    width: 100%;
+    padding: 30px 25px;
+
+}
+#services .services-content .image-caption i {
+    padding-top: 50px
+}
+#services .services-content .hover-content .hover-caption {
+    padding: 30px 25px;
+}
+#services .services-content .hover-content {
+    background-color: rgba(31, 180, 255, 1);
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
     transition: all ease .5s;
     -webkit-transition: all ease .5s;
-    -moz-transition: all ease .5s
+    -moz-transition: all ease .5s;
+    opacity: 0;
 }
-#services .services-item .services-link .services-hover:hover {
+#services .services-content .hover-content:hover {
     opacity: 1;
 }
-#services .services-item .services-link .services-hover .services-hover-content {
-    position: absolute;
-    width: 100%;
-    height: 20px;
-    font-size: 20px;
-    text-align: center;
-    top: 50%;
-    margin-top: -12px;
-    color: #fff
+#services h2.services-subheading {
+    margin-top: 60px;
 }
 
 @media (min-width: 768px) {
-    #services .services-item {
+    #services .services-content {
         margin-bottom: 30px
     }
 }
@@ -506,8 +502,7 @@ section#presentation {
     padding: 25px
 }
 #portfolio .portfolio-item .portfolio-caption p {
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: italic;
+    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     margin: 0
 }
@@ -537,7 +532,7 @@ section#presentation {
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
     position: absolute;
     width: 100%;
-    height: 20px;
+    height: 100%;
     font-size: 20px;
     text-align: center;
     top: 50%;
@@ -558,8 +553,10 @@ section#presentation {
     margin-bottom: 30px;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4.read-more {
-    margin-top: -12px
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h5 {
+
+    text-transform: none;
+    font-size: 16px;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
@@ -576,12 +573,6 @@ section#presentation {
     text-transform: none;
     margin: 0
 }
-#portfolio .portfolio-item .portfolio-caption p {
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: italic;
-    font-size: 16px;
-    margin: 0
-}
 
 @media (min-width: 768px) {
     #portfolio .portfolio-item {
@@ -590,14 +581,15 @@ section#presentation {
 }
 
 /* About Section */
-#about .services-link .image {
-    position: relative;
+#about {
+    background-color: #1fb4ff;
 }
-#about .services-item .services-link .image h4 {
-    position: absolute;
-    top: 200px;
-    left: 0;
-    width: 100%;
+section#about {
+    color: #fff;
+}
+
+#about i.text-blue {
+    color: #1fb4ff;
 }
 
 /* Contact Section */
